@@ -76,11 +76,11 @@ Loại lỗi dùng đúng một trong 7 mã: `id_switch`, `fragmentation`, `lost
 
 | Frame | Mã người | Loại lỗi | Mô tả một câu | Phát hiện ở lượt | Đã sửa? |
 |---:|---|---|---|---|---|
-| 109 | P5 | `flag` | P5 vẫn còn ở vùng giao với P3 trước khi bị che; sang frame 110 track chuyển sang `outside` nhưng chưa bật `occluded` ở mốc chuyển tiếp. | Lượt 2 (theo cảnh) | Chưa sửa |
-| 110 | P5 | `flag` | Đây là mốc P5 mất hẳn; `outside` được bật đúng, nhưng chuỗi trạng thái che khuất trước mốc này chưa được ghi đầy đủ. | Lượt 2 (theo cảnh) | Chưa sửa |
-| 140 | P5 | `flag` | P5 hiện lại bằng đúng ID cũ sau đoạn `outside`; khi kiểm tra lại, phần bật/tắt `occluded` của cùng đoạn che vẫn còn thiếu. | Lượt 1 và lượt 2 | Chưa sửa |
+| 109 | P5 | `flag` | P5 vẫn còn ở vùng giao với P3 trước khi bị che; sang frame 110 track chuyển sang `outside` nhưng chưa bật `occluded` ở mốc chuyển tiếp. | Lượt 2 (theo cảnh) | Đã sửa |
+| 110 | P5 | `flag` | Đây là mốc P5 mất hẳn; `outside` được bật đúng, nhưng chuỗi trạng thái che khuất trước mốc này chưa được ghi đầy đủ. | Lượt 2 (theo cảnh) | Đã sửa |
+| 140 | P5 | `flag` | P5 hiện lại bằng đúng ID cũ sau đoạn `outside`; khi kiểm tra lại, phần bật/tắt `occluded` của cùng đoạn che vẫn còn thiếu. | Lượt 1 và lượt 2 | Đã sửa |
 
-Ba dòng trên là ba mốc của cùng một lỗi cờ `flag`, không tính thành ba lỗi độc lập.
+Ba dòng trên là ba mốc của cùng một lỗi cờ `flag`.
 
 Tổng hợp số lỗi theo loại:
 
